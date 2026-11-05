@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services administration | Bella Vista Salon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+:root { --pico-font-size: 100%; }
+body { padding-bottom: 3rem; }
+main.container { max-width: 960px; padding-top: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+article { margin-bottom: 1rem; }
+nav { padding-inline: 1rem; }
+</style>
+</head>
+<body>
+
+<header><nav><ul><li><strong>Bella Vista Salon · Staff</strong></li></ul><ul><li><a href="staff-calendar.html">Staff calendar</a></li><li><a href="services-admin.html" aria-current="page">Services admin</a></li><li><a href="services.html">View client services</a></li></ul></nav></header>
+<main class="container"><h1>Manage Services</h1><p>Add or update the services clients can request.</p>
+<article><h2>Current services</h2><ul><li>Women's Haircut — 45 minutes — $45</li><li>Hair Styling — 60 minutes — $55</li><li>Deep Conditioning — 30 minutes — $35</li><li>Blowout — 45 minutes — $40</li></ul></article>
+<form action="services-admin.html" method="get"><h2>Add a service (demo form)</h2><label for="name">Service name<input id="name" name="name" required></label><label for="description">Description<textarea id="description" name="description" rows="2"></textarea></label><div class="grid"><label for="duration">Duration in minutes<input id="duration" name="duration" type="number" min="1" required></label><label for="price">Price ($)<input id="price" name="price" type="number" min="0" step="0.01" required></label></div><button type="submit">Save service (demo)</button></form>
+<p><small>Static mockup only: submitted data is not saved.</small></p></main>
+</body>
+</html>

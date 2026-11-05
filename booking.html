@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose date and time | Bella Vista Salon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+:root { --pico-font-size: 100%; }
+body { padding-bottom: 3rem; }
+main.container { max-width: 960px; padding-top: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+article { margin-bottom: 1rem; }
+nav { padding-inline: 1rem; }
+</style>
+</head>
+<body>
+
+<header><nav><ul><li><strong>Bella Vista Salon</strong></li></ul><ul><li><a href="services.html">Services</a></li><li><a href="booking.html" aria-current="page">Book</a></li><li><a href="appointments.html">My appointments</a></li><li><a href="staff-calendar.html">Staff</a></li></ul></nav></header>
+<main class="container"><h1>Request an Appointment</h1><p>Select a service and your preferred date and time. Your request will be pending until staff confirms it.</p>
+<form action="review.html" method="get">
+<label for="client">Your name<input id="client" name="client" type="text" placeholder="e.g., Maya Rodriguez" required></label>
+<label for="email">Email address<input id="email" name="email" type="email" placeholder="maya@example.com" required></label>
+<label for="service">Service<select id="service" name="service" required><option value="">Choose a service</option><option>Women's Haircut — 45 min</option><option>Hair Styling — 60 min</option><option>Deep Conditioning — 30 min</option><option>Blowout — 45 min</option></select></label>
+<div class="grid"><label for="date">Preferred date<input id="date" name="date" type="date" required></label><label for="time">Available time<select id="time" name="time" required><option value="">Choose a time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:30 AM</option><option>1:00 PM</option><option>2:30 PM</option><option>4:00 PM</option></select></label></div>
+<p><small>Sample availability for this static mockup. A live version will check the salon schedule before saving.</small></p>
+<button type="submit">Review appointment</button> <a href="services.html" role="button" class="secondary">Back to services</a>
+</form></main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff calendar | Bella Vista Salon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+:root { --pico-font-size: 100%; }
+body { padding-bottom: 3rem; }
+main.container { max-width: 960px; padding-top: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+article { margin-bottom: 1rem; }
+nav { padding-inline: 1rem; }
+</style>
+</head>
+<body>
+
+<header><nav><ul><li><strong>Bella Vista Salon · Staff</strong></li></ul><ul><li><a href="services.html">Client view</a></li><li><a href="staff-calendar.html" aria-current="page">Staff calendar</a></li><li><a href="services-admin.html">Services admin</a></li></ul></nav></header>
+<main class="container"><h1>Staff Appointment Calendar</h1><p>Thursday, November 12, 2026 · Daily schedule</p>
+<figure><table><thead><tr><th>Time</th><th>Client</th><th>Service</th><th>Status</th><th>Staff action</th></tr></thead><tbody>
+<tr><td>9:00 AM</td><td>Olivia Garcia</td><td>Blowout</td><td>Confirmed</td><td><a href="#completed">Mark complete</a></td></tr>
+<tr><td>10:00 AM</td><td>Maya Rodriguez</td><td>Women's Haircut</td><td><mark>Pending</mark></td><td><a href="#confirmed">Confirm</a> · <a href="#cancelled">Cancel</a></td></tr>
+<tr><td>11:30 AM</td><td>Sofia Martinez</td><td>Hair Styling</td><td>Confirmed</td><td><a href="#completed">Mark complete</a></td></tr>
+</tbody></table></figure>
+<p><small>Action links are visual placeholders in this static mockup; they do not update records.</small></p><a href="services-admin.html" role="button">Manage services</a></main>
+</body>
+</html>
